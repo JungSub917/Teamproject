@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		div.border{
+		border: 1px solid red;
+		}
+		#outer {
+			width: 1200px;
+			height: 440px;
+		}
+		#upper {
+			height: 70px;
+			margin-bottom: 30px;
+		}
+		#inner1{
+			width: 630px;
+			height: 332px;
+			float: left;
+		}
+		#inner1a{
+			width: 232px;
+			height: 330px;
+			float:left;
+			overflow: hidden;
+			border-top-left-radius:20px;
+			border-top-right-radius:20px;
+			border-bottom-right-radius:20px;
+			
+			
+		}
+		#inner1a img {
+			width: 232px;
+		}
+		#inner1b{
+			width: 362px;
+			height: 330px;
+			float:right;
+		}
+		#inner1b1{
+			margin-top:50px;
+/* 			margin-bottom:10px; */
+		}
+		#inner1b2{
+		margin:10px 0;
+			font-size:20px;
+			font-weight:600;
+			line-height:30px;
+			letter-spacing:-0.1em;
+		}
+		#inner1b3{
+			font-size: 14px;
+			letter-spacing: -0.75px;
+			line-height:22px;
+		}
+		#inner1b4{
+			font-size:16px;
+			font-weight:600;
+			letter-spacing: -0.75px;
+			line-height:24px;
+			margin-top:20px;
+		}
+		#inner1b5{
+		position: relative;
+	    color: #474c98;
+	    margin-top: 30px;
+	    font-size: 14px;
+	    line-height: 22px;
+	    letter-spacing: -0.01em;
+	    font-weight: 700;
+	    box-sizing: border-box;
+	    overflow: hidden;
+	    display: inline-block;
+	    width: 100%;
+	    max-width: 100%;
+	    height: auto;
+	    max-height: none;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+		}
+		#inner1b5 img {
+			width:16px;
+			
+		}
+		#inner1b6{
+		margin-top:12px;
+		color: #595959;
+   		font-size: 14px;
+		letter-spacing: -0.01em;
+		max-height: 66px;
+   		line-height: 22px;
+		}
+		#inner2{
+			width: 460px;
+			height: 332px;
+			float: right;
+		}
+		#inner2book{
+			margin-left:20px;
+			width:142px;
+			height:280px;
+		}
+		#inner2book img{
+			width:140px;
+			height:202px;
+		}
+		.badge1{
+			font-size: 11px;
+			color: #3471c1;
+		    border: 1px solid #eaf0f9;
+		    background: #eaf0f9;
+			min-height: 20px;
+			border-radius: 4px;
+			font-weight:600;
+			padding-left:4px;
+			padding-right:4px;
+			letter-spacing: -0.41px;
+		}
+		
+		body{
+		font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer" class="border">
+		<div id="upper" class="border">
+			 <h1>오늘의 선택</h1>
+		</div>
+		<div id="inner1">
+			<div id="inner1a">
+				<img src="Images/눈물.jpg"/>
+			</div>
+			<div id="inner1b">
+				<div id="inner1b1">
+					<span class="badge1">eBook</span>
+				</div>
+				<div id="inner1b2">
+					<span> [정통판타지] 눈물을 마시는 새 오디오북 세트 </span>
+				</div>
+				<div id="inner1b3">
+					<span> 이영도 · 황금가지 </span>
+				</div>
+				<div id="inner1b4">
+					<span>54,500원</span>
+				</div>
+				<div id="inner1b5">
+				<img src="Images/icon.png"/>
+					<span>눈물을 마시는 새 20주년!</span>
+				</div>
+				<div id="inner1b6">
+					<span>오디오북으로 즐기는 레전드 판타지</span>
+				</div>
+			</div>
+		</div>
+		<div id="inner2" class="border">
+			<div id="inner2book">
+				<div>
+					<img src="Images/book1.jpg">
+				</div>
+				<div>
+				<span class="badge1" style="margin-top:12px;">eBook</span>
+				</div>
+			</div>
+			<div id="inner2book">
+			</div>
+			<div id="inner2book">
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</body>
+</html>

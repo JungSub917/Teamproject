@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="signup.css"/>
+</head>
+<body>
+	<div id="signbox" class="bd">
+		<div id="header1" class="bd">회원가입
+		</div>
+		<div class="inputwrap">
+			<input id="email" class="inputbox" type="email" placeholder="이메일을 입력해주세요."/>
+		</div>
+		<div class="inputwrap">
+			<input id="name" class="inputbox" type="text" placeholder="이름을 입력해주세요."/>
+		</div>
+		<div class="inputwrap">
+			<input id="pw" class="inputbox" type="password" placeholder="비밀번호를 입력해주세요."/>
+		</div>
+		<div class="inputwrap">
+			<input id="pwcheck" class="inputbox" type="password" placeholder="비밀번호를 다시 입력하주세요."/>
+		</div>
+		<div id="phonewrap">
+			<select id="telcop">
+				<option selected disabled>선택</option>
+				<option>SKT</option>
+				<option>KT</option>
+				<option>LGU+</option>
+			</select>
+			<input id="phone1" class="phonebox1" type="tel" maxlength="3">&nbsp;-
+			<input id="phone2" class="phonebox2" type="tel" maxlength="4">&nbsp;-
+			<input id="phone3" class="phonebox2" type="tel" maxlength="4">
+		</div>
+		<div class="inputwrap">
+			<select id="address">
+				<option selected disabled>지역을 선택해주세요.</option>
+				<option>서울특별시</option>
+				<option>경상북도</option>
+				<option>경상남도</option>
+				<option>충청북도</option>
+				<option>충청남도</option>
+				<option>전라북도</option>
+				<option>전라남도</option>
+			</select>
+		</div>
+		<div class="inputwrap gender">
+				<span><input type="radio" name="gender">남성</span>
+				<span><input type="radio" name="gender">여성</span>
+		</div>
+		<div class="inputwrap">
+			<div class=""><input type="checkbox">본인은 만 14세 이상입니다.<span class="agree">(필수)</span></div>
+			<div><input type="checkbox">개인정보수집에 동의합니다.<span class="agree">(필수)</span></div>
+		</div>
+		<div class="notice">
+			<div><i>개인정보수집</i></div>
+			<div><i>목적</i><span>개인식별,회원자격 유지・관리</span></div>
+			<div><i>항목</i><span>이름,아이디,이메일,닉네임,비밀번호</span></div>
+			<div><i>보유기간</i><span>회원탈퇴 시 즉시 파기</span></div>
+		</div>
+		<div id="inputwrap1"><input type="checkbox">이용약관에 동의합니다.<span class="agree">(필수)</span></div>
+		<div id="inputwrap2" class="bd"><input class="input1" type="button" value="회원가입"/></div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* header */
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+*{
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style-type: none;
+}
+.head_box{
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.head_content{
+  width: 1100px;
+  margin: auto;
+}
+.head_title{
+  width: 200px;
+  margin: auto;
+}
+.head_title h1 img{  
+  width: 191px;
+  height: 40px;
+}
+.gnb_box{
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.gnb_content{
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  top: -45px;
+}
+.gnb_content ul{
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.gnb_content ul li{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6c6c6c;
+}
+.gnb_content ul li:nth-child(1) :hover{
+  color: black;
+}
+.gnb_content ul li:nth-child(2) :hover{
+  color: black;
+}
+.gnb_content ul li:nth-child(3) {
+  margin-left:10px;
+  border: 1px solid #3ad195;
+  border-radius: 5%;
+  color: #3ad195;
+}
+.profil{
+	width: 40px;
+}
+
+.profil img{
+	width: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+.profil_box{
+	width: 200px;
+	border: 1px solid #e5e5e5;
+	background-color: white;
+	position: absolute;
+	top: 1px;
+	z-index: 99;
+}
+
+.profil_box img{
+	width: 40px;
+}
+.profil_box ul li{
+	border-bottom: 1px solid #e5e5e5;
+}
+.profil_box ul li:nth-child(1){
+	padding: 15px;
+}
+.profil_box ul li a{
+	padding: 15px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.lnb_box{
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+	z-index: 11;
+}
+.lnb_box ul{
+  display: flex;
+  font-size: 17px;
+}
+.lnb_box li{
+  padding: 0px 34px;
+  color: #4a4a4a;
+}
+
+.lnb_box a{
+  display: block;
+  line-height: 50px;
+}
+.lnb_box a:hover:not(.on){
+  border-bottom: 3px solid #3ad19540;
+}
+.lnb_box .on{
+  font-weight: bold;
+  border-bottom: 3px solid #3ad195;
+}
+.profil_box{
+	display:none;
+}
+.profil_box ul li:nth-child(1){
+	font-size: 15px;
+	display: flex;
+	color: #3ad195;
+	font-weight: 600;
+}
+.profil_box ul li:nth-child(1) img{
+	margin-right: 10px;
+}
+.profil_box ul li:nth-child(1) .hi{
+	font-size: 13px;
+	color: black;
+}
+/* footer */
+.util_Box{
+  width: 100%;
+  height: 52px;
+  background-color: #373741;
+}
+.util_contain{
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.util_content ul{
+  display: flex;
+  color: #86868c;
+  padding: 15px;
+  padding-left: 0;
+  font-size: 14px;
+}
+.util_content li{
+  float: left;
+}
+.util_content li::after{
+  float: right;
+  content: "|";
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.util_content li:last-child:after{
+  content: "";
+}
+.util_content li a:hover{
+  color: #fff;
+}
+.coInfo_Box{
+  width: 100%;
+  height: 148px;
+  background-color: #45454f ;
+}
+.util_sns ul{
+  display: flex;
+  padding: 10px 0px 10px 10px;
+}
+.stu_sns{
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-size: 300px;
+  filter: invert(45%) sepia(7%) saturate(298%) hue-rotate(201deg) brightness(93%) contrast(88%);
+  margin-right: 10px;
+}
+.facebook{
+  background-image: url(../images/stu_footer.png);
+  background-position: -1px 0px;
+}
+.instagram{
+  background-image: url(../images/stu_footer.png);
+  background-position: -1px -34px;
+}
+.kakao{
+  background-image: url(../images/stu_footer.png);
+  background-position: 33px 0px;
+}
+.email{
+  background-image: url(../images/stu_footer.png);
+  background-position: 33px -33px;
+}
+.stu_sns:hover{
+  filter: none;
+}
+.coInfo_contain{
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+.footer_logo{
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/stu_footer.png);
+  background-repeat: no-repeat;
+  background-position: -27px ;
+  background-size: cover;
+  position: absolute;
+  top: 45px;
+}
+.business_info{
+  color: #86868c;
+  position: absolute;
+  top: 40px;
+  left: 220px;
+  line-height: 30px;
+}

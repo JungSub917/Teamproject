@@ -1,0 +1,111 @@
+#write_body{
+	width:900px;
+	margin:40px auto;
+	border : 1px solid #3ad195;
+	padding:50px;
+	border-radius: 10px;
+	
+}
+.hide{
+	display:none;
+}
+.note-editor{
+	margin-top:20px;
+}
+#image_container{
+	text-align: center;
+}
+#image_container > img{
+	width:200px;
+}
+#image{
+	display:none;
+}
+#btn_upload{
+	text-align: center;
+	font-weight: bold;
+}
+#upload_box{
+	cursor:pointer;
+	border-radius: 20px;
+	line-height: 50px;
+    height: 50px;
+	border:3px solid #3ad195;
+	margin:auto;
+	width:235px;
+	margin-top:35px;
+}
+#user_title{
+	margin-top:20px;
+}
+#write_title_box{
+	margin-top:30px
+}
+#write_title_box input {
+	font-size: 20px;
+	border:0;
+	width: 100%;
+    padding: 0 0 10px 8px;
+    border-bottom: 1px solid #3ad195;
+    box-sizing: border-box;
+    outline: 0;
+}
+.title_check{
+	margin:5px 0 0 10px;
+	color:red;
+	font-size: 14px;
+    line-height: 17px;
+}
+#write_ctt{
+	margin-top:20px;
+}
+#write_ctt_box{
+	margin-top:60px;
+}
+#write_ctt_box textarea{
+	font-size: 20px;
+	border:0;
+	width: 100%;
+    padding: 0 0 0 8px;
+    border-bottom: 1px solid #3ad195;
+    box-sizing: border-box;
+    outline: 0;
+}
+#list_btn{
+	text-align:right;
+	margin-top:60px;
+	
+}
+#cancel_btn{
+	border-radius: 10px;
+	font-weight: 500;
+	border: 2px solid black;
+	height: 45px;
+	width: 100px;
+	padding:0px 5px;
+	margin-right:25px;
+	margin:5px 5px;
+	font-size: 15px;
+	color: #242424;
+	line-height: 40px;
+	font-weight: bold;
+	cursor:pointer;
+	background-color:white;
+}
+#save_btn{
+	border-radius: 10px;
+	font-weight: 500;
+	border: 2px solid black;
+	height: 45px;
+	width: 100px;
+	padding:0px 5px;
+	margin-right:25px;
+	margin:5px 5px;
+	font-size: 15px;
+	color: #242424;
+	line-height: 40px;
+	font-weight: bold;
+	cursor:pointer;
+	background-color:black;
+	color:white;
+}

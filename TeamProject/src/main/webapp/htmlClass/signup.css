@@ -1,0 +1,100 @@
+@charset "UTF-8";
+li {
+	list-style-type:none;
+	float:left;
+}
+ .bd {
+ 	border:1px solid red;
+ }
+ #signbox{
+ 	width:500px;
+ 	height:900px;
+ 	margin:auto;
+ }
+ #header1{
+ 	font-size:40px;
+ 	font-weight:bold;
+ 	text-align:center;
+ }
+ .inputwrap{
+ 	margin:auto;
+ 	width:400px;
+ 	height:30px;
+ 	margin-top:35px;
+ }
+ #inputwrap1{
+ 	margin:-15px auto;
+ 	width:400px;
+ 	height:30px;
+ }
+ #inputwrap2{
+ 	margin:30px auto;
+ 	width:300px;
+ 	height:50px;
+ }
+ .input1 {
+ 	margin: 0px auto;
+ 	width:100%;
+ 	height:100%;
+ }
+ .signup{
+ 	text-align:center;
+ 	padding:15px 0px;
+ }
+ #phonewrap{
+ 	margin:auto;
+ 	width:450px;
+ 	height:30px;
+ 	margin-top:35px;
+ }
+ .inputbox{
+ 	width:400px;
+ 	height:30px;
+ }
+ .phonebox1{
+ 	width:60px;
+ 	height:28px;
+ 	margin-left:53px;
+ }
+ .phonebox2{
+ 	width: 80px;
+ 	height:28px;
+ 	margin-left:4px;
+ 	
+ }
+ #address{
+ 	width:400px;
+ 	height:30px;
+ }
+ #telcop{
+/*  	width:64px; */
+ 	height:34px;
+ 	margin-left:25px;
+ }
+ .gender{
+ 	text-align:center;
+ }
+ .hyphen{
+ 	font-size:6px;
+ 	font-weight:bold;
+ }
+ .agree{
+ 	font-size:5px;
+ 	color:blue;
+ }
+ .notice{
+ 	width:250px;
+ 	height:90px;
+ 	margin: 25px auto;
+ 	border:1px solid #3ad195;
+ }
+ .notice i {
+ 	font-size: 12px;
+    color: #999;
+    text-align: left;
+ }
+ .notice span{
+ 	color:black;
+ 	margin-left:30px;
+ 	font-size: 12px;
+ }

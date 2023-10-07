@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+a{
+	color: inherit;
+	text-decoration-line: none;
+	}
+*{
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+  }
+body{
+	font-family: 'Noto Sans KR';
+ 	margin: 0;
+  	padding: 0;
+  	-webkit-user-select:none;
+  	-moz-user-select:none;
+  	-ms-user-select:none;
+  	user-select:none
+}
+li{
+	list-style-type:none;
+}
+html{
+	scroll-behavior: smoothl;
+}
+div .fl{float: left;}
+div .fr{float: right;}
+
+.customer_img{
+	width: 100%;
+	height: 250px;
+	background-image:url(../images/notice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 110%;	
+	opacity:1;
+	margin-bottom: 30px;
+}
+.customer_sub_title{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	font-weight: bold;
+	color:#fff;
+	width: 260px;
+	font-size: 70px;
+	width: 100%;
+	text-align: center;
+}
+.customer_main_title{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	padding-top: 60px;
+}
+.customer_nav_box{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	width: 790px;
+	margin: 50px auto;
+}
+.customer_nav{
+	width: 100%;
+	margin-bottom: 50px;
+	display: flex;
+	position: relative;
+}
+.customer_nav button{
+	width: 100%;
+	font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s ease;
+    display: block;
+	border:0.5px solid #86868c;
+	color: #86868c;
+}
+.customer_nav > li{
+	flex:1;
+}
+.customer_nav button:hover{
+	border:1px solid #000000;
+	background-color:#000000;
+	color: #fff;
+}
+.customer_nav button.action{
+	background: #242424;
+    color: #fff;
+}
+.customer_content_box{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	width: 900px;
+	margin: 50px auto;
+}
+.customer_head_box{
+	border-top: 2px solid #242424;
+	border-bottom: 1px solid #d7d7d7;
+	padding:20px 0px 20px 0px;
+	background:#f7f7f7;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+.page_btn{
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+.page_btn a{
+	color: #242424;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+	margin: 0px 6px 0px 6px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #86868c;
+}
+.page_btn span{
+	color: #242424;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+	margin: 0px 6px 0px 6px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.page_btn a img{
+	opacity: 0.5;
+	width: 30px;
+}
+.page_btn a:hover{
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.page_btn a img:hover{
+	opacity: 1;
+}
+.page_btn a.action{
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.qandawrite_btn{
+	margin:auto;
+	margin-bottom: 100px;
+	width: 900px;
+	height: 40px;
+}
+.qandawrite_btn button:hover{
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.qandawrite_btn button{
+	float:right;
+	background:#f7f7f7;
+	width: 100px;
+	height: 40px;
+	text-align:center;
+	display:block;
+	line-height: 40px;
+	border:0.5px solid #86868c;
+	color: #666;
+	font-size: 15px;
+    border-radius: 5px;
+}
+.number{width:125px;}
+.title{width: 525px;}
+.date{width: 125px;}
+.check{width: 125px;}
+
+.user_qanda_box{
+	padding: 20px 0px 20px 0px;
+	width: 100%;
+	overflow: hideen;
+	border-bottom: 1px solid #d7d7d7;
+}
+.qanda_none{
+	margin-top: -30px;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+.qanda_number{
+	color: #86868c;
+	text-align:center;
+	width: 125px;
+}
+.qanda_title{
+	cursor: pointer;
+	width: 525px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.qanda_title a{
+	color: #000;
+}
+.qanda_title:hover{
+	font-weight: bold;
+}
+.qanda_date{
+	color: #86868c;
+	text-align:center;
+	width: 125px;
+}
+.qanda_check{
+	color: #08E3EF;
+	text-align:center;
+	width: 125px;
+}
+.qandaDetail_box{
+	margin:auto;
+	width: 790px;
+}
+.qandaDetail_qBox{
+	padding: 20px 0px 20px 0px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.qandaDetail_aBox{
+	padding: 20px 0px 20px 0px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.qandaDetail_title_box{
+	margin: 10px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.qandaDetail_title{
+	font-weight: bold;
+	font-size: 20px;
+}
+.qandaDetail_check{
+	color: #08E3EF;
+}
+.qandaDetail_date{
+	font-size:14px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	color: #86868c;
+	}
+.qandaDetail_category{
+	padding-bottom: 20px;
+    margin-top: 20px;
+}
+.qandaDetail_Q{
+	color: #666;
+	margin: 10px;
+}
+.qandaDetail_Q p{
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.qandaDetail_A{
+	color: #666;
+	margin: 10px;
+	font-size: 17px;
+}
+.qandaDetail_A p{
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.qandaDetail_A span{
+	font-size:14px;
+	color: #86868c;
+}
+.qandaDetail_btnBox{
+	width: 335px;
+	margin: 30px 0px 30px 0px;
+}
+.qandaDetail_btnBox button{
+	text-align:center;
+	display:block;
+	line-height: 40px;
+	border:0.5px solid #86868c;
+	color: #666;
+	font-size: 15px;
+    border-radius: 5px;
+}
+.qandaDetail_btnBox button:hover{
+	background:#000;
+	color:#fff;
+}
+.qandaDetail_delete_btn{
+	width: 90px;
+	height: 40px;
+	background:#f7f7f7;
+	margin: 10px 10px 10px 10px;
+}
+.qandaDetail_update_btn{
+	width: 90px;
+	height: 40px;
+	background:#f7f7f7;
+	margin: 10px 10px 10px 10px;
+}
+.qandaDetail_back_btn{
+	margin: 10px 10px 10px 10px;
+	width: 90px;
+	height: 40px;
+	background:#f7f7f7;
+	text-align:center;
+	display:block;
+	line-height: 40px;
+	border:0.5px solid #86868c;
+	color: #666;
+	font-size: 15px;
+    border-radius: 5px;
+}
+.qandaDetail_back_btn:hover{
+	background:#000;
+	color:#fff;
+}
+.qandaDetail_comment_none{
+	color: #666;
+	font-size: 20px;
+	margin:20px 0px 20px 0px;
+	text-align:center;
+}
+.qanda_write_box{
+	font-size: 20px;
+	margin:auto;
+	margin-bottom: 30px;
+	width: 790px
+}
+.qanda_write_box sup{
+	color: red;
+}
+.qanda_write_category{
+	margin-bottom: 10px;
+}
+.qanda_write_category select{
+	outline: none;
+	font-weight: 600;
+	font-size: 15px;
+	width: 200px;
+	height: 30px;
+}
+.qanda_write_title{
+	border-bottom: 1px solid #d7d7d7;
+}
+.qanda_write_title input{
+	outline: none;
+	border: none;
+	font-size: 15px;
+	width:	100%;
+	height: 50px;
+}
+.qanda_write_content{
+	border-bottom: 1px solid #d7d7d7;
+	margin-top: 10px;
+}
+
+.qanda_write_content textarea{
+	font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: normal;
+	outline: none;
+	width: 99%;
+    height: 280px;
+    border: none;
+    resize: none;
+}
+.qanda_btn_box{
+	margin-top: 10px;
+    width: 190px;
+    margin-bottom: 10px;
+}
+.qanda_btn_box input[type=submit], .qanda_btn_box input[type=button]{
+	transition: all .2s ease;
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background:#f7f7f7;
+	font-size: 20px;
+}
+.qanda_btn_box input[type=submit]:hover, .qanda_btn_box input[type=button]:hover{
+	background: #000;
+	color: #fff;
+}
+.qandaDetail_A textarea{
+	padding: 10px;
+	font-size: 17px;
+    font-weight: 500;
+    letter-spacing: normal;
+	outline: none;
+	width: 84%;
+    height: 80px;
+    border: 1px solid grey;
+    resize: none;
+}
+.qandaDetail_A input[type=submit]{
+	border:none;
+	color: #fff;
+	font-size: 17px;
+	background: #666;
+	float:right;
+	width: 100px;
+	height: 102px;
+}
+.qanda_comment{
+	width: 710px;
+}
+.qanda_content_btn_box{
+    width: 60px;
+    height: 20px;
+}
+.qanda_content_btn_box span{
+	opacity: 0.5;
+	cursor:pointer;
+	width: 20px;
+    display: block;
+	height: 20px;
+	background-image: url(../images/meue_btn.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right;
+}
+.qanda_content_btn_box span:hover{
+	opacity: 1;
+}
+.qanda_content_btn{
+	display:none;
+}
+.qanda_content_btn button{
+	height: 35px;
+    width: 80px;
+	margin-top: -1px;
+	background-color: #fff;
+    border: 1px solid grey;
+    margin: -1px 0px 0px -7px;
+    border-radius: 4px;
+}
+.qanda_content_btn button:hover{
+	font-weight: bold;
+    border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

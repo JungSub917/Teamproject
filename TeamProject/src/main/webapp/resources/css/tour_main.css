@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+body {
+	font-family: 'Noto Sans KR';
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style-type: none;
+}
+.clearFix::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+body, a, input, button, textarea, select, table, option{
+  line-height: 1.4;
+}
+
+#nation_img_box{
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    background-repeat: no-repeat ;
+    background-size:cover;
+    background-position: 50% 50%;
+}
+#nation_img_box img{
+    width: 526.5px;
+}
+#nation_choice_box{
+    width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 360px;
+}
+#tour_item_box{
+    width: 1100px;
+    margin: auto;
+}
+.tour_none_item{
+	display: none;
+	padding: 25px 0 25px 0;
+    width: 1100px;
+    margin: auto;
+}
+.category{
+    width: 1100px;
+    height: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+.category .title{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.top_item{
+	cursor:pointer;
+	margin: 0px 4px 0px 0px;
+    width: 358px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+.top_item .nation{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.top_item img{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    width: 362px;
+    height: 198px;
+}
+.top_item .text{
+     position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 20px;
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-align:center;
+}
+.top_item .price{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.tour_item{
+	cursor:pointer;
+    width: 266px !important;
+    height: 222px !important;
+    margin-right: 9px;
+    border: 1px solid #999;
+}
+.tour_item a{
+    color: #333333;
+    text-decoration: none;
+    word-wrap: break-word;
+}   
+.tour_item img{
+    width: 266px;
+    height: 140px;
+}
+.tour_item_title{
+	margin-top: 2px;
+    width: 266px;
+    height: 42px;
+}
+.tour_item p{
+	padding-top: 5px;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: -5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+.tour_item.rating span{
+	margin-left: 14px;
+}
+.tour_item_rating{
+    width: 50px;
+    height: 14.4px;
+    margin: 0 2px 0 5px;
+}
+
+.tour_item_rating i{
+	float: left;
+    background-image: url(../images/stu_icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15.12px;
+    height: 14.4px;
+    margin: 4px 2px 0px 5px;
+    background-position: 0 -129.6px;
+    background-size: 230.4px;    
+    vertical-align: -1.5px;
+}
+.rating_price_box{
+    width: 260px;
+    height: 20px;
+    margin-top: 15px;
+}
+.tour_item_title{
+    width: 255px;
+    height: 42px;
+    margin:auto;
+}
+.tour_item_price{
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.innerbox{
+    padding-top: 150px;
+    margin-left: 300px;
+}
+
+div .fl{float: left;}
+div .fr{float: right;}
+
+.naticon{
+    width: 110px;
+    height: 113px;
+    margin: auto;
+    font-size: 13.3333px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.naticon img{
+    width: 86px;
+}
+
+.naticon:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.naticon.on{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+    font-weight: bold;
+}
+.naticon.on img{
+	    filter: invert(77%) sepia(100%) saturate(325%) hue-rotate(108deg) brightness(93%) contrast(100%);
+}
+.bx-wrapper{
+	-webkit-box-shadow:none !important;
+    background: #fff;
+	border:none !important;
+}
+.bx-prev{
+	left: -110px !important;
+	height: 46px !important;
+    background: url(../images/stu_icon.png) -15px -177px !important;
+}
+.bx-next{
+	right: -110px !important;
+	height: 46px !important;
+    background: url(../images/stu_icon.png) -73px -177px !important;
+}
+.bx-viewport{
+	height: 230px !important;
+}
+.none_package{
+	margin: 90px 0px 90px 0px;
+	text-align:center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #999;
+}
+.bx-wrapper .bx-controls-direction a{
+	margin-top: -50px !important;
+}

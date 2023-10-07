@@ -1,0 +1,209 @@
+.wrap_Box{
+	width: 100%;
+	margin-top: 50px;
+}
+.wrap_contain{
+	width: 790px;
+	margin: auto;
+}
+.wrap_contain .tit_wrap{
+	paddgin: 10px;
+	margin-bottom: 70px;
+}
+.wrap_contain .tit_wrap p{
+	line-height: 30px;
+}
+.wrap_contain .tit_wrap p:nth-child(1){
+	color: #3ad195;
+	font-size: 15px;
+	font-weight: 900;
+}
+.wrap_contain .tit_wrap p:nth-child(2){
+	font-size: 20px;
+	font-weight: 900;
+	margin-top: 5px;
+}
+.wrap_contain .tit_wrap p:nth-child(3){
+	font-size: 13px;
+	color: #999999;
+	margin-top: 5px;
+}
+.tit_wrap{
+	border-bottom: 1px solid #dfe1e6;
+	padding-bottom: 20px;
+}
+.con_wrap{
+	padding-bottom: 70px;
+	border-bottom: 1px solid #dfe1e6;
+	margin-bottom: 20px;
+}
+.buttons{
+	border-bottom: 1px solid #dfe1e6;
+}
+.buttons .hotel_review_list{
+	display: block;
+	width: 70px;
+	height: 35px;
+	border: 1px solid black;
+	padding: 0px 10px;
+	padding-top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	border-radius: 5px;
+	float: right;
+}
+.buttons .hotel_review_delete{
+	display: block;
+	width: 70px;
+	height: 35px;
+	border: 1px solid black;
+	padding: 0px 10px;
+	padding-top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	border-radius: 5px;
+	float: left;
+}
+.buttons .hotel_review_reform{
+	display: block;
+	width: 70px;
+	height: 35px;
+	border: 1px solid black;
+	padding: 0px 10px;
+	padding-top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	border-radius: 5px;
+	float: left;
+}
+.buttons .hotel_review_list:hover,
+.buttons .hotel_review_reform:hover,
+.buttons .hotel_review_delete:hover{
+	background-color: #dfe1e650;
+}
+.hotel_review_write{
+	display: block;
+	width: 100px;
+	height: 35px;
+	background-color: #3ad195;
+	padding: 0px 10px;
+	padding-top: 12px;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+	float: right;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.hotel_review_comment{
+	width: 779px;
+	height: 90px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #dfe1e6;
+	padding: 12px 0px 12px 12px;
+	postition: relative;
+}
+.hotel_review_comment p{
+	margin-bottom: 10px;
+}
+.commentCnt{
+	color: red;
+}
+.commentxt{
+	width: 700px;
+	height: 40px; 
+	font-size: 17px;
+}
+.comment_register{
+	width: 60px;
+	hegith: 45px;
+	padding: 13px;
+	position: absolute;
+	background-color: #666666;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.comment_register:focus{
+	border: none;
+	outline: none;
+}
+.comment_list{
+	margin-bottom: 50px;
+}
+.comment_list ul li{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.comment_list ul li .profil_img{
+	float: left;
+	margin-right: 15px;
+}
+.comment_list ul li .profil_img img{
+	width: 36px;
+}
+.profil_user{
+	float:left;
+	line-height: 22px;
+}
+.comment_op{
+	float: right;
+	position: relative;
+}
+.comment_op span{
+	color: #999;
+	font-size: 12px;
+}
+.comment_op img{
+	width: 20px;
+	top: 2px;
+	right: -25px;
+}
+.option_box{
+	cursor: pointer;
+}
+.opt_box{
+	width: 80px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	text-align: center;
+	display: none;
+	font-size: 14px;
+	position: absolute;
+	right: -10px;
+	z-index: 10;
+}
+.opt_box p{
+	padding: 5px;
+	cursor: pointer;
+}
+.opt_box p:hover{
+	background-color: #dfe1e650;
+}
+.com_reform{
+	padding: 10px 10px 10px 10px;
+	background-color: #fafafa;
+	position: relative;
+	display: none;
+}
+.com_reform input{
+	width: 700px;
+	height: 40px;
+	font-size: 17px;
+}
+.com_reform button{
+	width: 60px;
+	padding: 13px;
+	position: absolute;
+	top: 10px;
+	background-color: #666666;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+}
+.com_reform button:focus{
+	border: none;
+	outline: none;
+}

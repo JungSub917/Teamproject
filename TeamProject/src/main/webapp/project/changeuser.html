@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../CSS/header_footer.css">
+<link rel="stylesheet" href="../CSS/mypage.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+	  <header>
+    <div class="head_box">
+      <div class="head_content">
+        <div class="head_title">
+          <h1><a href="./Main.html"><img src="../Images/stu_logo.png" alt=""></a></h1>
+        </div>
+        <div class="gnb_box">
+          <div class="gnb_content">
+            <ul>
+              <li><a href="">고객센터</a></li>
+              <li><a href="./Login.html">로그인</a></li>
+              <li><a href="./Signup.html">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lnb_box">
+      <div class="lnb_content">
+        <ul>
+          <li><a href="./Main.html">홈</a></li>
+          <li><a href="./SearchMain.html">탐색</a></li>
+          <li><a href="">유럽투어</a></li>
+          <li><a href="./HotelMain.html">숙소</a></li>
+          <li><a href="#">여행기</a></li>
+        </ul>        
+      </div>
+    </div>
+  </header>
+	<section id="mypage_head">
+		<div>
+			<div id="title_box">
+				<b id="title">마이페이지</b>
+				<p>
+					<span id="user_id">kosang5653</span><span id="hello">님
+						안녕하세요!</span>
+				</p>
+			</div>
+			<div id="list" class="fl">
+				<ul>
+					<li menu="my_plan">나의 일정</li>
+					<li menu="my_like">찜한 여행</li>
+					<li menu="my_hotel">투어/숙소 예약</li>
+					<li menu="my_cancel">결제 취소내역</li>
+					<li menu="my_act" class="on">계정관리
+						<p class="on_check"></p>
+					</li>
+				</ul>
+			</div>
+			<div id="content" class="fl">
+				<div id="infotitle_container">
+					<div id="infotitle">
+						<b>기본정보</b>
+					</div>
+					<div class="user_info_box">
+						<div>이름</div>
+						<input type="text" value="고상운">
+					</div>
+					<div class="user_info_box">
+						<div>닉네임</div>
+						<input type="text" value="고씨">
+					</div>
+					<div class="user_info_box">
+						<div>이메일</div>
+						<input type="email" value="kosang5653@naver.com">
+					</div>
+					<div id="infotitle">
+						<b>비밀번호</b>
+					</div>
+					<div class="user_info_box">
+						<div>비밀번호</div>
+						<input type="password">
+					</div>
+					<div class="user_info_box">
+						<div>새 비밀번호</div>
+						<input type="password">
+					</div>
+					<div class="user_info_box">
+						<div>새 비밀번호 확인</div>
+						<input type="password">
+					</div>
+					<div style="text-align: center;">
+						<button id="delete_user_btn">회원탈퇴</button>
+					</div>
+					<div id="save_user_btn">
+						<button>취소하기</button>
+						<button>저장하기</button>
+					</div>
+				</div>
+			</div>
+	<div style="clear:both"></div>
+		</div>
+	</section>
+	  <footer>
+    <div class="util_Box">
+      <div class="util_contain">
+        <div class="util_content">
+          <ul>
+            <li><a href="#">광고/제휴문의</a></li>
+            <li><a href="#">서비스문의</a></li>
+            <li><a href="#">개인정보 취급방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">여행자약관</a></li>
+            <li><a href="#">가이드약관</a></li>
+          </ul>
+        </div>
+        <div class="util_sns">
+          <ul>
+            <li class="stu_sns facebook"><a href="#"></a></li>
+            <li class="stu_sns instagram"><a href="#"></a></li>
+            <li class="stu_sns kakao"><a href="#"></a></li>
+            <li class="stu_sns email"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="coInfo_Box">
+      <div class="coInfo_contain">
+        <div class="footer_logo"></div>
+        <div class="business_info">
+          <p>상상속 여행을 현실로, 스투비플래너</p>
+          <address> contact: apple9568@naver.com</address>
+        </div>
+      </div>
+    </div>
+  </footer>
+	<script>
+		$(function() {
+			$("#list li").on("click", function() {
+				let menu = $(this).attr("menu");
+				$(".show").hide();
+				$("#" + menu + "").show();
+				$("#list li").children().remove();
+				$(this).append('<p class="on_check"></p>');
+				$("#list li").removeClass('on');
+				$(this).addClass('on');
+			})
+
+			$(".ico_like").on("click", function() {
+				let answer = confirm("찜한 여행에서 삭제하시겠습니까?")
+				if (answer) {
+					$(this).parents(".plan_box").remove();
+				}
+			})
+			$(".plan_delete").on("click", function() {
+				let answer = confirm("정말 삭제하시겠습니까?")
+				if (answer) {
+					$(this).parents(".plan_box").remove();
+				}
+			})
+			$(".edit").on(
+					"click",
+					function() {
+						let title = $("#my_plan_title").val();
+						$(this).parent().children("#my_plan_title").val("");
+						$(this).parent().children("#my_plan_title").attr(
+								"placeholder", title);
+					})
+		})
+	</script>
+</body>
+</html>

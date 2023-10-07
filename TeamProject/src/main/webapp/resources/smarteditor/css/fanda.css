@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+
+div .border{
+    border: 1px solid red;
+    
+}
+a{
+	 text-decoration-line: none;
+}
+body{
+	font-family: 'Noto Sans KR';
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style-type:none;
+}
+
+.show{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	margin: auto;
+	width: 790px;
+	border-top: 2px solid #000000;
+}
+
+div .fl{float: left;}
+div .fr{float: right;}
+
+.box{
+	background-color:#000;
+}
+.customer_img{
+	width: 100%;
+	height: 250px;
+	background-image:url(../../img/notice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: 110%;	
+	opacity:1;
+	margin-bottom: 30px;
+}
+.customer_sub_title{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	font-weight: bold;
+	color:#fff;
+	width: 260px;
+	font-size: 70px;
+	width: 100%;
+	text-align: center;
+}
+.customer_main_title{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	padding-top: 60px;
+}
+.customer_nav_box{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	width: 790px;
+	margin: 50px auto;
+}
+.customer_nav{
+	width: 100%;
+	margin-bottom: 50px;
+	display: flex;
+	position: relative;
+}
+.customer_nav button{
+	width: 100%;
+	font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s ease;
+    display: block;
+	border:0.5px solid #86868c;
+	color: #86868c;
+}
+.customer_nav > li{
+	flex:1;
+}
+.customer_nav button:hover{
+	border:1px solid #000000;
+	background-color:#000000;
+	color: #fff;
+}
+.customer_nav button.action{
+	background: #242424;
+    color: #fff;
+}
+
+.page_btn{
+	text-align: center;
+	width: 100%;
+    padding: 2.5rem 0;
+	justify-content: center;
+	display: flex;
+}
+.page_btn a{
+	color: #242424;
+	font-size: 20px;
+	display: block;
+	margin: 0px 6px 0px 6px;
+	width: 30px;
+	height: 30px;
+	border: 0.5px solid #86868c;
+}
+.page_btn span{
+	color: #242424;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+	margin: 0px 6px 0px 6px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000000;
+}
+.page_btn a img{
+	opacity: 0.5;
+	width: 30px;
+}
+.page_btn a:hover{
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.page_btn a img:hover{
+	opacity: 1;
+}
+.page_btn a.action{
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+
+.category_box{
+	width: 790px;
+    margin: 50px auto;
+    padding: 1px 0px 10px 0px;
+    background: #fafafa;
+}
+.category_box li{
+  	float: left;
+}
+.category_box button{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	box-sizing: border-box;
+	background: transparent;
+	color: #666;
+	height: 40px;
+	border:none;
+    font-size: 15px;
+    text-transform: none;
+    font-weight:bold;
+}
+.category_box button:hover{
+	    cursor: pointer;
+    color: #ff5800;
+}
+.category_box button.active{
+	line-height: 40px;
+    border-bottom: 2px solid #ff5800;
+    color: #ff5800;
+}
+.category_box button.active:after{
+	margin-top:10px;
+}
+.category_box li::after{
+  line-height: 35px;
+  float: right;
+  content: "|";
+  margin: 0px 5px 0px 5px;  
+}
+.category_box li:last-child:after{
+  content: "";
+}
+.fanda_main_box{
+	width: 790px;
+    margin: auto;
+}
+.fanda_title_box{
+	cursor: pointer;
+	width:100%;
+	padding: 20px 0 15px 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+.fanda_title_box:hover{
+	font-weight: bold;
+}
+.fanda_title{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	line-height: 23px;
+	font-size: 17px;
+}
+.fanda_icon_q{
+	margin: 0 20px 0 15px;
+}
+.fanda_icon_q img{
+	filter: invert(61%) sepia(15%) saturate(0%) hue-rotate(159deg) brightness(95%) contrast(95%);
+	width: 25px;
+}
+.fanda_ud_icon{
+	margin: 8px 20px 0px 0px;
+    width: 23px;
+    height: 14px;
+    background-image: url(../../img/main/stu_icon.png);
+    background-repeat: no-repeat;
+    background-position: -151px -115.25px;
+    background-size: 310px;
+}
+
+.fanda_content_box{
+	dispaly:none;
+	padding: 30px 0px 30px 0px;
+	border-bottom: 1px solid #d7d7d7;
+	background: #fafafa;
+}
+.fanda_icon_a{
+	margin: 0 0 0 15px;
+}
+.fanda_icon_a img{
+	filter: invert(44%) sepia(100%) saturate(4008%) hue-rotate(4deg) brightness(105%) contrast(102%);
+	width: 25px;
+}
+.fanda_content{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	margin: auto;
+    width: 670px;
+}
+.write_btn{
+	width: 790px;
+	margin: auto;
+	margin-top: 10px;
+}
+.write_btn button:hover{
+	background:#f7f7f7;
+	border: 1px solid #000000;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.14);
+}
+.write_btn button{
+	width: 90px;
+	height: 40px;
+	float:right;
+	text-align:center;
+	border:0.5px solid #86868c;
+	color: #666;
+	font-size: 15px;
+    border-radius: 5px;
+}
+.fanda_content_btn_box{
+    width: 60px;
+    height: 20px;
+}
+.fanda_write_box select{
+	width: 200px;
+	height: 30px;
+}
+.fanda_content_btn_box span{
+	opacity: 0.5;
+	cursor:pointer;
+	width: 20px;
+    display: block;
+	height: 20px;
+	background-image: url(../../img/main/meue_btn.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right;
+}
+.fanda_content_btn_box span:hover{
+	opacity: 1;
+}
+.fanda_content_btn{
+	z-index: 10;
+	display:none;
+}
+.fanda_content_btn button{
+	height: 30px;
+    width: 55px;
+	margin-top: -1px;
+	background-color: #grey;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.fanda_content_btn button:hover{
+	font-weight: bold;
+    border: 1px solid #000;
+}
+
+.fanda_write_box{
+	font-size: 20px;
+	margin:auto;
+	margin-bottom: 30px;
+	width: 790px
+}
+.fanda_write_box sup{
+	color: red;
+}
+.fanda_write_title{
+	border-bottom: 1px solid #d7d7d7;
+}
+.fanda_write_title input{
+	outline: none;
+	border: none;
+	font-size: 15px;
+	width:	100%;
+	height: 50px;
+}
+.fanda_write_content{
+	border-bottom: 1px solid #d7d7d7;
+	margin-top: 10px;
+}
+
+.fanda_write_content textarea{
+	font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: normal;
+	outline: none;
+	width: 99%;
+    height: 280px;
+    border: none;
+    resize: none;
+}
+.fandan_writeBtn_box{
+	margin-top: 10px;
+    width: 190px;
+    margin-bottom: 10px;
+}
+.fandan_writeBtn_box input[type=button]{
+	width: 80px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background:#f7f7f7;
+	font-size: 20px;
+	height: 50px;
+}
+.fandan_writeBtn_box input[type=button]:hover{
+	background: #000;
+	color: #fff;
+}
+
+
+
+
+

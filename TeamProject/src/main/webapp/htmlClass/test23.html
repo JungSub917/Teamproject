@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script
+		  src="https://code.jquery.com/jquery-3.7.0.js"
+		  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+		  crossorigin="anonymous">
+	</script>
+	<script>
+		$(function(){
+			$("#plus").click(function(){
+				$("#cnt").val(Number($("#cnt").val())+1);
+			});
+		
+			$("#minus").click(function(){
+				$("#cnt").val(Number($("#cnt").val())-1);
+				if($("#cnt").val()==0){
+				$("#minus").click(function(){
+					$("#cnt").val(0);
+				});
+		};
+			});
+		});
+	
+	</script>
+</head>
+<body>
+	Count:<input type="text" id="cnt" value="0">
+	<button id="plus">+</button>
+	<button id="minus">-</button>
+</body>
+</html>

@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+body{
+	position:relative;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type:none;
+}
+
+#mapcontrolleft {
+	width: 420px;
+	height: 100%;
+	float: left;
+}
+
+#map {
+	height: 100vh;
+}
+
+#header {
+	width: 420px;
+	height: 100px;
+	background: #3ad195;
+	padding-top: 5px;
+}
+
+#header img {
+	width: 220px;
+	padding: 5px 5px;
+}
+
+#calendar {
+	width: 280px;
+	height: 35px;
+	margin-left: 10px;
+	background-color: white;
+}
+
+#calendar img {
+	width: 5px;
+	margin-top: 5px;
+}
+
+#calendar label {
+	color: #696969;
+	font-size: 15px;
+	margin-left: 25px;
+}
+
+#calendar input {
+	height: 35px;
+	width: 100px;
+	border: none;
+	color: #c0c0c0;
+	margin-left: 20px;
+	font-size: 17px;
+}
+
+#cityroute {
+	width: 410px;
+	padding: 5px;
+}
+
+.plan {
+	line-height: 26px;
+	width: 405px;
+	height: 80px;
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+	cursor:pointer;
+}
+
+.line {
+	margin-left: 24px;
+	width: 5px;
+	border-right: 3px solid #3ad195;
+	height: 10px;
+}
+
+.line2 {
+	width: 29px;
+	border-right: 3px solid #3ad195;
+	height: 7px;
+}
+
+.circle {
+	width: 48px;
+	height: 40px;
+	padding-left: 7px;
+	background: #fff;
+	padding-top: 13px;
+	border-radius: 100px;
+	border: 3px solid #3ad195;
+	cursor: pointer;
+}
+
+.circle button {
+	background-color: white;
+	color: #696969;
+	font-size: 15px;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+}
+
+.circle button:hover {
+	text-decoration: underline;
+}
+
+#planbox {
+	margin: 11px 20px;
+	position: relative;
+}
+
+#plantitle {
+	font-weight: bold;
+	color: #3b3b37;
+	font-size: 17px;
+}
+
+#plantitle button {
+	background-image: url(../images/planner_x.png);
+	background-size: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: inherit;
+	cursor: pointer;
+	border: 0;
+}
+.ico_like{
+	position: absolute;
+	float: right;
+    border: 0;
+    border-radius: 8px;
+    background-size: 235px;
+    background-position: -90px -2px;
+    background-image: url(../images/stu_icon.png);
+    width: 25px;
+    height: 25px;
+    cursor:pointer;
+    transition: all 0.4s ;
+}
+.ico_like:hover{
+	background-size: 190px;
+    background-position: -70px 2px;
+}
+.plandate {
+	padding-top: 4px;
+	font-size: 13px;
+	color: #c0c0c0
+}
+
+#planday {
+	margin-left: 30px;
+}
+#seach {
+	width: 415px;
+	height: 45px;
+	border-radius: 2px;
+	background-color: white;
+	border: 1px solid #efefef;
+	padding: 4px;
+	z-index: 3;
+	position: absolute;
+	top: 4%;
+	right: 44%;
+}
+
+#seach input {
+	border: 1px solid #fff;
+	padding-left: 8px;
+	width: 290px;
+	height: 43px;
+	font-size: 18px;
+	color: gray;
+}
+
+#seach img {
+	width: 20px;
+	position: absolute;
+	top: 15px;
+}
+
+#my {
+	margin-left: 25px;
+	width: 80px;
+	height: 45px;
+	border-left: 1px solid #efefef;
+}
+
+#my button {
+	height: 35px;
+	width: 60px;
+	margin: 5px 0px 5px 18px;
+	background: #696969;
+	color: #fff;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#popup1 {
+	width: 1050px;
+	height: 700px;
+	border: 7px solid rgb(105, 105, 105);
+	position: absolute;
+	top: 15%;
+	left: 30%;
+	background-color: white;
+	z-index: 2;
+	display: none;
+}
+
+.popup2 {
+	background-color: rgba(0, 0, 0, 0.85);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 3;
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+.xbox {
+	position: absolute;
+	top: 20px;
+	left: 67%;
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/popup2_x.png);
+	background-size: 40px;
+	background-color: inherit;
+	cursor: pointer;
+	border: 0;
+}
+
+#popup2day {
+	width: 670px;
+	margin: 25px auto;
+	text-align: center;
+}
+
+#popup2day table {
+	margin: auto;
+}
+
+.popup2main .select {
+	display: inline-block;
+	cursor: pointer;
+	height: 90px;
+	width: 100px;
+	margin: 10px;
+	border: 5px solid #3ad195;
+	color: #fff;
+	border-radius: 70px;
+	padding-top: 10px;
+}
+
+.popup2main .select.active {
+	display: inline-block;
+	cursor: pointer;
+	height: 90px;
+	width: 100px;
+	margin: 10px;
+	border: 5px solid #3ad195;
+	background: #3ad195;
+	color: #fff;
+	border-radius: 70px;
+	padding-top: 10px;
+}
+
+#popup2day div {
+	margin-top: 23px;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.popup2main {
+	padding: 20px 120px 0 120px;
+}
+
+.popup2main h1 {
+	display: inline;
+}
+
+#popup2ctt {
+	overflow: auto;
+	padding: 10px;
+	text-align: left;
+	width: 670px;
+	height: 300px;
+	margin: auto;
+	border-radius: 5px;
+	background: #fff;
+	color: #696969;
+	border: 5px solid #3ad195;
+}
+
+#popup2ctt p {
+	font-size: 17px;
+}
+
+#popheader {
+	height: 50px;
+	background: #696969;
+	padding-left: 50px;
+}
+
+#poptit {
+	width: 90%;
+	height: 100%;
+	color: white;
+	font-size: 30px;
+}
+
+#box1 {
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	margin-right: 40px;
+	background-image: url(../images/planner_x.png);
+	background-size: 50px;
+	background-color: inherit;
+	cursor: pointer;
+	border: 0;
+}
+
+#box2 {
+	width: 20px;
+	height: 20px;
+}
+
+#addtrip {
+	border: 0;
+	width: 250px;
+	height: 60px;
+	letter-spacing: 3px;
+	background-color: gray;
+	border-radius: 5px;
+	position: absolute;
+	top: 4%;
+	right: 3%;
+	z-index: 1;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#citylist {
+	overflow:scroll;
+	padding: 25px;
+	height: 84%;
+}
+
+.list {
+	width: 185px;
+	padding: 5px;
+	position: relative;
+}
+
+.list img {
+	width: 170px;
+	height: 180px;
+}
+
+.btn {
+	margin-top: 10px !important;
+	width: 49px;
+	height: 48px;
+	position: absolute;
+	top: 5px;
+	right: 22px;
+	background-image: url(../images/add_circle.png);
+	background-color: inherit;
+	cursor: pointer;
+	border: 0;
+}
+
+.content {
+	padding: 5px 0;
+}
+
+.content h5 {
+	line-height: 100%;
+	color: #696969;
+	font-size: 18px;
+}
+
+.content p {
+	margin-top: 10px;
+	line-height: 100%;
+	font-size: 14px;
+	color: #a9a9a9;
+}
+#autoMaker{
+	overflow-y:scroll;
+	border:1px solid white;
+	background-color:white;
+	max-height:90vh;
+}
+#autoMaker li{
+	padding: 8px;
+	font-size:20px;
+	list-style-type:none;
+	cursor:pointer;
+}
+#autoMaker li:hover{
+	background-color: bisque;
+    border-radius: 15px;
+}
+
+.bd {
+	border: 1px solid red;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* section01 */
+.searchpw_box{
+  width: 100%;
+  height: 100vh;
+}
+.searchpw_contain{
+  width: 310px;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search_box h2{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.searchpw_email label{
+  font-size: 12px;
+  color: #999;
+  display: block;
+  margin-bottom: 3px;
+}
+.searchpw_email input{
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  margin: auto;
+  padding-left: 10px;
+  color: #666;
+  border: 1px solid #e0e0e0;
+  transition: 0.2s ease-in-out;
+}
+.searchpw_email input:focus{
+  outline: none;
+  border-color: #3ed297;
+}
+.search_box p{
+  width: 300px;
+  /* margin: auto; */
+  font-size: 11px;
+  padding: 5px;
+  color: #616161;
+}
+.search_box p:nth-of-type(1){
+  margin-bottom: 12px;
+}
+.search_box .findpw_btn button{
+  width: 310px;
+  height: 45px;
+  margin: 10px auto;
+  color: white;
+  background-color: #3ed297;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.back_btn{
+  width: 310px;
+  height: 45px;
+  margin: 10px auto;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 2px;
+}
+.back_btn p{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+}

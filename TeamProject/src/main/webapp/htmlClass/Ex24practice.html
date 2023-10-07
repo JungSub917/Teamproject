@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		td > img {width:160px;}	
+		table {border-collapse: collapse;}
+		th, td {border: 1px solid grey; padding: 8px;}
+	</style>
+	<script src="../js/jquery-3.7.0.min.js"></script>
+	<script>
+		function calc(){
+			//"730원">>"730">>730
+			let unit = $("#unit_price").text();
+				unit = unit.replace("원","");
+				unit = Number(unit);
+			//"1">>1
+			let value = Number($("#qty").val());
+			//730*1>>"730원">>셋팅
+			let price = unit * value;
+			
+			price = price + "원";
+			
+			$("#price").text(price);
+			
+			
+			
+		};
+		$(function(){
+			$("#btn_plus").click(function(){
+				let value = Number($("#qty").val());
+					$("#qty").val(value+1);
+					calc();
+			});
+			$("#btn_minus").click(function(){
+				let value = Number($("#qty").val());
+				$("#qty").val(value-1);
+				calc();
+				if(value==1){
+					$("#qty").val(1);
+					calc();
+				};
+			});
+		});
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>품목</th>
+			<th>단가</th>
+			<th>수량</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td><img src="../Images/nagasaki.png"/></td>
+			<td id="unit_price"><b>730원</b></td>
+			<td>
+				<button id="btn_minus">-</button>
+				<input type="text" id="qty" value="1"/>
+				<button id="btn_plus">+</button>
+			</td>
+			<td id="price"></td>
+		</tr>
+	</table>
+</body>
+</html>
